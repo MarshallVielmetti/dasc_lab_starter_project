@@ -1,4 +1,4 @@
-from lab_project.dynamics.unicycle import UnicycleDynamics
+from dasc_lab.dynamics import UnicycleDynamics
 
 
 def test_forward_motion() -> None:

@@ -1,31 +1,17 @@
-# Minimal Lab Project
+# DASC Lab Starter Project
 
-Generated student documentation belongs in the starter project.
+Welcome to the DASC lab starter project.
 
-# Minimal Lab Project
+## Unicycle forward dynamics
 
-This fixture demonstrates the version-1 authoring contract for startergen.
+Complete the following exercise:
 
-## Forward motion
-
-The exercise source is available here:
-
-[Unicycle dynamics — UnicycleDynamics.f (src/lab_project/dynamics/unicycle.py:7-8)](src/lab_project/dynamics/unicycle.py#L7-L8)
+[Unicycle forward dynamics — UnicycleDynamics.f (src/dasc_lab/dynamics/unicycle.py:7-9)](src/dasc_lab/dynamics/unicycle.py#L7-L9)
 
 > **Note — Learning goal**
-> Keep the implementation readable and test the forward-motion case.
+> Implement the smallest dynamics function first, then use the public test to check its observable behavior.
 
-Inline math uses $v = r\omega$ and a matrix example follows:
+For the example model, the commanded forward speed is carried into the first derivative component while the second state component is preserved.
 
-$$
-\begin{bmatrix} x \\ y \end{bmatrix}
-=
-\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
-\begin{bmatrix} x \\ y \end{bmatrix}.
-$$
+![A simple forward-motion diagram](assets/lab-diagram.svg)
 
-![A small lab diagram](assets/lab-diagram.svg)
-
-```text
-{{ exercise("unicycle-dynamics") }}
-```

@@ -1,3 +1,3 @@
-# Example
+# Examples
 
-This fixture example is included by the starter allowlist.
+Add student-facing examples and runnable demonstrations to this directory.

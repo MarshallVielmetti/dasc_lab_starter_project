@@ -2,144 +2,127 @@
   "files": [
     {
       "mode": 420,
-      "path": "LICENSE",
-      "sha256": "165acc231bdd9cdd4567a533c56c348b3c272b7815598b1c7e15d0dceff6c767",
-      "size": 64
-    },
-    {
-      "mode": 420,
       "path": "README.md",
-      "sha256": "b7c24263c16cb23ec178da5985fc5ea935711bda41f65b42ebb14f442939672b",
-      "size": 763
-    },
-    {
-      "mode": 420,
-      "path": "assets/.gitkeep",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "size": 1
+      "sha256": "593ecc3fb153e51440780d2e95c2bb550b23ffec79617839cdc71618e79d9b48",
+      "size": 612
     },
     {
       "mode": 420,
       "path": "assets/lab-diagram.svg",
-      "sha256": "eb3d7cd4d38ef0387458b4f13be1cc4bb433694bf3ea2c09a242500a276aef50",
-      "size": 317
+      "sha256": "709e19a76b3f67ae0379de27f5d3277fff70d6d133e0d8f2fcc2de204251a5b6",
+      "size": 686
     },
     {
       "mode": 420,
-      "path": "background/.gitkeep",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "size": 1
+      "path": "background/README.md",
+      "sha256": "bc862782e97c3beee2874e295b37249c630a5daef3abf21f86441b0e474ff78c",
+      "size": 98
     },
     {
       "mode": 420,
       "path": "examples/README.md",
-      "sha256": "a3055f83f441f16b38960028ed5dda00f431743dbbd4b617150cbd815ef2b800",
-      "size": 70
+      "sha256": "c77cdcaec68739548ee404dd61c64ded58691f0275d1f47e88a2ee63c89e3922",
+      "size": 87
     },
     {
       "mode": 420,
       "path": "pyproject.toml",
-      "sha256": "99bda7652fb759f728f4443509dc356ac605dcfe8b396e35a2536ef82c50a681",
-      "size": 224
+      "sha256": "dad69d0a8eb0b516a0ca0d76a493690702072ad67bab7eab87f4e22efe5948d4",
+      "size": 415
     },
     {
       "mode": 420,
-      "path": "src/lab_project/__init__.py",
-      "sha256": "f883d620e4baf5db7d80b74b836bc8a8efaef3aab0219d0c095fd5ffe1c8edcd",
-      "size": 41
+      "path": "src/dasc_lab/__init__.py",
+      "sha256": "97d2f4605e2cc911c816e1e0653a2e8fa3065fdd9c72a3577185b9e8259612d0",
+      "size": 56
     },
     {
       "mode": 420,
-      "path": "src/lab_project/dynamics/__init__.py",
-      "sha256": "288ec6613cb2b7a8ae6486d6cc4aa3ca5682e0b5e3d9c0cdf90d0a2148840860",
-      "size": 32
+      "path": "src/dasc_lab/dynamics/__init__.py",
+      "sha256": "fed89a6e3fa1b4aeb79f47668d8cd8e032a09c5c141fa5e7c173cb2fc56f83af",
+      "size": 134
     },
     {
       "mode": 420,
-      "path": "src/lab_project/dynamics/unicycle.py",
-      "sha256": "584b0ffb6cd096ab7eaf344b15e9aa17102e05fd7056a5ec2783b6ebc0e2bdfd",
-      "size": 317
+      "path": "src/dasc_lab/dynamics/unicycle.py",
+      "sha256": "24ebe7fe4da5c3c8a2de249bd97a503fff48517581993a2bcd188af4352a3b03",
+      "size": 435
     },
     {
       "mode": 420,
       "path": "tests/public/test_unicycle.py",
-      "sha256": "493758e453165a04d917b87b394a05b32618b2fd3bab285ecf514e40eac4e91e",
-      "size": 159
+      "sha256": "4c08091d1a3568540de6a5914a148c6bfb1528f8d611de601a7eb872fcbc412a",
+      "size": 147
     },
     {
       "mode": 420,
       "path": "tests/smoke/test_import.py",
-      "sha256": "d37cea6b2365c868d2476b98d6acc9101866da0473e2ec5f9d1a3a1dbf31a310",
-      "size": 125
+      "sha256": "322c76b023e9b85d6ab851b441d8ecb31fb39213a92c18e5fc91584ed8d1717c",
+      "size": 113
     },
     {
       "mode": 420,
       "path": "uv.lock",
-      "sha256": "4dfe8622520f9df59fdba6083edb72ae9461e313a29f30a1b33068121a50f483",
-      "size": 79
+      "sha256": "0418a022139f28e69a68e374200d84a4e37a450da507fa85000bce63f08bfedc",
+      "size": 4676
     }
   ],
   "generator_version": "0.1.0",
   "project": {
-    "import_package": "lab_project",
-    "name": "Minimal Lab Project"
+    "import_package": "dasc_lab",
+    "name": "DASC Lab Starter Project"
   },
   "provenance": {
     "inputs": [
       {
-        "path": "LICENSE",
-        "sha256": "165acc231bdd9cdd4567a533c56c348b3c272b7815598b1c7e15d0dceff6c767",
-        "size": 64
-      },
-      {
         "path": "examples/README.md",
-        "sha256": "a3055f83f441f16b38960028ed5dda00f431743dbbd4b617150cbd815ef2b800",
-        "size": 70
+        "sha256": "c77cdcaec68739548ee404dd61c64ded58691f0275d1f47e88a2ee63c89e3922",
+        "size": 87
       },
       {
         "path": "pyproject.toml",
-        "sha256": "99bda7652fb759f728f4443509dc356ac605dcfe8b396e35a2536ef82c50a681",
-        "size": 224
+        "sha256": "dad69d0a8eb0b516a0ca0d76a493690702072ad67bab7eab87f4e22efe5948d4",
+        "size": 415
       },
       {
-        "path": "src/lab_project/__init__.py",
-        "sha256": "f883d620e4baf5db7d80b74b836bc8a8efaef3aab0219d0c095fd5ffe1c8edcd",
-        "size": 41
+        "path": "src/dasc_lab/__init__.py",
+        "sha256": "97d2f4605e2cc911c816e1e0653a2e8fa3065fdd9c72a3577185b9e8259612d0",
+        "size": 56
       },
       {
-        "path": "src/lab_project/dynamics/__init__.py",
-        "sha256": "288ec6613cb2b7a8ae6486d6cc4aa3ca5682e0b5e3d9c0cdf90d0a2148840860",
-        "size": 32
+        "path": "src/dasc_lab/dynamics/__init__.py",
+        "sha256": "fed89a6e3fa1b4aeb79f47668d8cd8e032a09c5c141fa5e7c173cb2fc56f83af",
+        "size": 134
       },
       {
-        "path": "src/lab_project/dynamics/unicycle.py",
-        "sha256": "448eb3918a4c7c4baa167b3510e15b37ac244b233d0e02e318994a61efcc1c51",
-        "size": 267
+        "path": "src/dasc_lab/dynamics/unicycle.py",
+        "sha256": "fdb80540aa7d8a06e781c2dd65109a21b7086fa958c25e92c721ca73c9d40ae2",
+        "size": 386
       },
       {
         "path": "teaching/config.yml",
-        "sha256": "a3589afcdba08208e1b8f8ad6229799546bc99fa5d4554e93ce0f22a56ef3851",
-        "size": 628
+        "sha256": "f6a7dfc0a169fd58845c8fc623955e78eeb0cbe782863feb4d40cb30d271cbc3",
+        "size": 661
       },
       {
         "path": "teaching/exercises.yml",
-        "sha256": "ae22640bc3d38dbf86f6cb880fe01d25dc734a0fbef271682d6dac7a4a2512a5",
-        "size": 482
+        "sha256": "edc78ba8d63e88a0409194fa869c72c091e2806cb5cba0d40d15b8d5136b225d",
+        "size": 487
       },
       {
         "path": "tests/public/test_unicycle.py",
-        "sha256": "493758e453165a04d917b87b394a05b32618b2fd3bab285ecf514e40eac4e91e",
-        "size": 159
+        "sha256": "4c08091d1a3568540de6a5914a148c6bfb1528f8d611de601a7eb872fcbc412a",
+        "size": 147
       },
       {
         "path": "tests/smoke/test_import.py",
-        "sha256": "d37cea6b2365c868d2476b98d6acc9101866da0473e2ec5f9d1a3a1dbf31a310",
-        "size": 125
+        "sha256": "322c76b023e9b85d6ab851b441d8ecb31fb39213a92c18e5fc91584ed8d1717c",
+        "size": 113
       },
       {
         "path": "uv.lock",
-        "sha256": "4dfe8622520f9df59fdba6083edb72ae9461e313a29f30a1b33068121a50f483",
-        "size": 79
+        "sha256": "0418a022139f28e69a68e374200d84a4e37a450da507fa85000bce63f08bfedc",
+        "size": 4676
       }
     ]
   },

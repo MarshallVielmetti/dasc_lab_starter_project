@@ -1,1 +1,0 @@
-"""Minimal completed-project fixture."""
