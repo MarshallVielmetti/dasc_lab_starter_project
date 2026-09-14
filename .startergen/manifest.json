@@ -101,8 +101,8 @@
       },
       {
         "path": "teaching/config.yml",
-        "sha256": "f6a7dfc0a169fd58845c8fc623955e78eeb0cbe782863feb4d40cb30d271cbc3",
-        "size": 661
+        "sha256": "4b8c79ba3c027234fa4a9bdf99f1568b67df621f3dfb1cb188873a3818b2b2ca",
+        "size": 720
       },
       {
         "path": "teaching/exercises.yml",
