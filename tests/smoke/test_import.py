@@ -1,5 +1,5 @@
-from dasc_lab.dynamics import UnicycleDynamics
+from dasc_lab.dynamics import Unicycle2D
 
 
 def test_package_imports() -> None:
-    assert UnicycleDynamics
+    assert Unicycle2D

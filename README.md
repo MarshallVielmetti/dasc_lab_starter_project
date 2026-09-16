@@ -2,16 +2,9 @@
 
 Welcome to the DASC lab starter project.
 
-## Unicycle forward dynamics
+This series of small projects is intended to act as a primer to the concepts we use all the time in the lab!
 
-Complete the following exercise:
+You will start by implementing various dynamics models which we use frequently, including Unicycle, Double-Integrator, Dubins, and Quadrotor.
 
-[Unicycle forward dynamics — UnicycleDynamics.f (src/dasc_lab/dynamics/unicycle.py:7-9)](src/dasc_lab/dynamics/unicycle.py#L7-L9)
-
-> **Note — Learning goal**
-> Implement the smallest dynamics function first, then use the public test to check its observable behavior.
-
-For the example model, the commanded forward speed is carried into the first derivative component while the second state component is preserved.
-
-![A simple forward-motion diagram](assets/lab-diagram.svg)
+You will then progress to designing and implementing controllers for these different systems, understanding the tradeoffs of each one, and the types of systems they are suitable for.
 

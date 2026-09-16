@@ -3,8 +3,50 @@
     {
       "mode": 420,
       "path": "README.md",
-      "sha256": "593ecc3fb153e51440780d2e95c2bb550b23ffec79617839cdc71618e79d9b48",
-      "size": 612
+      "sha256": "dae90c91525078b3aa0e37cdd4ef72b787bfca7b6b371851c84aaea611786cdf",
+      "size": 507
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/kinematic_bicycle_2d.png",
+      "sha256": "289fb53d6a0cf4c096bfb6ce270dcbb8a6ad33e638b4db342e46a7c31e97637d",
+      "size": 50242
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/kinematic_bicycle_2d_analysis.png",
+      "sha256": "41457c14b9a043bf243a318172aa18d9e0d463faf225a6b15f0e6417050f1046",
+      "size": 59742
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/planar_quadrotor.png",
+      "sha256": "eeff2e89ae271f716905579e5c9b3f3bbe6d956385724885c2ee212d63c964d8",
+      "size": 78105
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/planar_quadrotor.webp",
+      "sha256": "9460c76a34e3b2b4e6ebeffd1fe18177b60ce36ddf05dee4af2dad70a1064d2e",
+      "size": 17930
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/state_control.png",
+      "sha256": "550d926520280f8353dcbf8e3de176f6e4aee70092e93706ef3c5af33b13ba75",
+      "size": 3112
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/state_only.png",
+      "sha256": "1f332ec89706adf567de0c7fc846dbe672be1961a280a8a0263a5646f9945215",
+      "size": 2557
+    },
+    {
+      "mode": 420,
+      "path": "assets/dynamics_models/state_only.svg",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
     },
     {
       "mode": 420,
@@ -27,8 +69,8 @@
     {
       "mode": 420,
       "path": "pyproject.toml",
-      "sha256": "dad69d0a8eb0b516a0ca0d76a493690702072ad67bab7eab87f4e22efe5948d4",
-      "size": 415
+      "sha256": "e8e756b1651d9fa14a7c9b22563a4e6d8df8fcf7a1c29c8a01d4a7a2b4c92bd0",
+      "size": 436
     },
     {
       "mode": 420,
@@ -39,32 +81,110 @@
     {
       "mode": 420,
       "path": "src/dasc_lab/dynamics/__init__.py",
-      "sha256": "fed89a6e3fa1b4aeb79f47668d8cd8e032a09c5c141fa5e7c173cb2fc56f83af",
-      "size": 134
+      "sha256": "34cdda4bb6dfe059dbe9e4b7f82a3217854d41933c72ede4c6a1b29f7011e8b2",
+      "size": 657
     },
     {
       "mode": 420,
-      "path": "src/dasc_lab/dynamics/unicycle.py",
-      "sha256": "24ebe7fe4da5c3c8a2de249bd97a503fff48517581993a2bcd188af4352a3b03",
-      "size": 435
+      "path": "src/dasc_lab/dynamics/double_integrator.py",
+      "sha256": "49baffea088f92247c37d2755c4bcb42ed9d1fa4d28998ca01fdbfbb8760e2be",
+      "size": 418
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/dynamic_unicycle2d.py",
+      "sha256": "1a8cb4c15b77a2204585e1f1e975ab230604efc3e8eedc8bcb77146c0144e218",
+      "size": 402
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/dynamics_model.py",
+      "sha256": "a29d805f341237fd70b67a4987dac1b2788a2b9c7ec89ce6c07294e6e862467a",
+      "size": 222
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/kinematic_bicycle2D.py",
+      "sha256": "cf7e9fbf7ec3d6865acad8b8d506f6d72f3866d93e3025aa51f47b55dc7753f2",
+      "size": 588
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/linear.py",
+      "sha256": "c2abd87e90fb72ac206dcc68ea3651f03ed6b7538868109843425d7bd80b5da0",
+      "size": 481
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/planar_quadrotor.py",
+      "sha256": "0624805871e06b7ac14499a2137f971997cbafd64c801686f5ca6642b962acab",
+      "size": 539
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/single_integrator.py",
+      "sha256": "21fc8b6bfa35244f8ae55f1f499883da0a901c4e21e2eb42ee0a145e4a60a175",
+      "size": 418
+    },
+    {
+      "mode": 420,
+      "path": "src/dasc_lab/dynamics/unicycle_2d.py",
+      "sha256": "1792e622c825a703a55374f354d7b6d46768e7b3a86ede221a5bcc8e5643de29",
+      "size": 376
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_double_integrator.py",
+      "sha256": "e688a323f0ea500729276996c18df6e8736e21710306897ca7613cb05482cddb",
+      "size": 857
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_dynamic_unicycle2d.py",
+      "sha256": "6e5532b60d7e5bedc36973002bff2084927b1e00a48fa4b60f7c54e7eedfcda5",
+      "size": 361
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_kinematic_bicycle2D.py",
+      "sha256": "ddee3c2425755e48468efbefaa657dc8094feece40f6dd7b768b0938d77ae11b",
+      "size": 369
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_linear_dynamics.py",
+      "sha256": "31c7b25ec53d81e4d4e46d8726dcc583ae4b2794b145f856453797947b0a771d",
+      "size": 411
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_planar_quadrotor.py",
+      "sha256": "115b0e14c4f3a570e9cd80e43febd4a89ff62a2daf6419c72f9d80425bffe6ad",
+      "size": 781
+    },
+    {
+      "mode": 420,
+      "path": "tests/public/test_single_integrator.py",
+      "sha256": "38b09bb22d5f056de708c783b04b184ce95ab9acd47954272499f1ce9b1e8896",
+      "size": 429
     },
     {
       "mode": 420,
       "path": "tests/public/test_unicycle.py",
-      "sha256": "4c08091d1a3568540de6a5914a148c6bfb1528f8d611de601a7eb872fcbc412a",
-      "size": 147
+      "sha256": "a4656c1b9ce6b650fd04d269dc8810e1e0bf9012f803ac8a00ff25a0ef5eeb11",
+      "size": 319
     },
     {
       "mode": 420,
       "path": "tests/smoke/test_import.py",
-      "sha256": "322c76b023e9b85d6ab851b441d8ecb31fb39213a92c18e5fc91584ed8d1717c",
-      "size": 113
+      "sha256": "896d31ccb690cef6592e649bf16a742e033b5d5067cbf9592ee42a14f1ffce22",
+      "size": 101
     },
     {
       "mode": 420,
       "path": "uv.lock",
-      "sha256": "0418a022139f28e69a68e374200d84a4e37a450da507fa85000bce63f08bfedc",
-      "size": 4676
+      "sha256": "8696deeb2e4569a566e399265b3bd07e8ca408c6999179b07f50ac38692fa896",
+      "size": 41931
     }
   ],
   "generator_version": "0.1.0",
@@ -81,8 +201,8 @@
       },
       {
         "path": "pyproject.toml",
-        "sha256": "dad69d0a8eb0b516a0ca0d76a493690702072ad67bab7eab87f4e22efe5948d4",
-        "size": 415
+        "sha256": "e8e756b1651d9fa14a7c9b22563a4e6d8df8fcf7a1c29c8a01d4a7a2b4c92bd0",
+        "size": 436
       },
       {
         "path": "src/dasc_lab/__init__.py",
@@ -91,38 +211,103 @@
       },
       {
         "path": "src/dasc_lab/dynamics/__init__.py",
-        "sha256": "fed89a6e3fa1b4aeb79f47668d8cd8e032a09c5c141fa5e7c173cb2fc56f83af",
-        "size": 134
+        "sha256": "34cdda4bb6dfe059dbe9e4b7f82a3217854d41933c72ede4c6a1b29f7011e8b2",
+        "size": 657
       },
       {
-        "path": "src/dasc_lab/dynamics/unicycle.py",
-        "sha256": "fdb80540aa7d8a06e781c2dd65109a21b7086fa958c25e92c721ca73c9d40ae2",
-        "size": 386
+        "path": "src/dasc_lab/dynamics/double_integrator.py",
+        "sha256": "16b4ce7f19f652802c97393732eb39d9515a2ee606ad5a7e29a28631e24103bf",
+        "size": 491
+      },
+      {
+        "path": "src/dasc_lab/dynamics/dynamic_unicycle2d.py",
+        "sha256": "a619cc8bb87f1c333becb2960e892c97085f238fc0a645eec235aac41fafcc07",
+        "size": 434
+      },
+      {
+        "path": "src/dasc_lab/dynamics/dynamics_model.py",
+        "sha256": "a29d805f341237fd70b67a4987dac1b2788a2b9c7ec89ce6c07294e6e862467a",
+        "size": 222
+      },
+      {
+        "path": "src/dasc_lab/dynamics/kinematic_bicycle2D.py",
+        "sha256": "46b829bf31a35ae0f4d820207d4f8d527acee4b2d37d348155981a64ba2baf61",
+        "size": 675
+      },
+      {
+        "path": "src/dasc_lab/dynamics/linear.py",
+        "sha256": "8c50f79750401a88b2448952a0c1631639c53749249a9264caf0059e7afb2c7d",
+        "size": 439
+      },
+      {
+        "path": "src/dasc_lab/dynamics/planar_quadrotor.py",
+        "sha256": "6d1356b1dcebdb01508480d430bbfc687e9879e0808b33636c906eb7d80b5be2",
+        "size": 728
+      },
+      {
+        "path": "src/dasc_lab/dynamics/single_integrator.py",
+        "sha256": "7b4384e01fe07a074719d21d736700fe013833e9a547249dc6c9df50122eafee",
+        "size": 418
+      },
+      {
+        "path": "src/dasc_lab/dynamics/unicycle_2d.py",
+        "sha256": "3d12146436bcdd08b86041c557abce247f22ffb7daaff708ce633bd0ef22a455",
+        "size": 388
       },
       {
         "path": "teaching/config.yml",
-        "sha256": "4b8c79ba3c027234fa4a9bdf99f1568b67df621f3dfb1cb188873a3818b2b2ca",
+        "sha256": "fce77be6633b3dc0f051887d8b276cb2027139b6351adaa101faa45bd8bd3071",
         "size": 720
       },
       {
         "path": "teaching/exercises.yml",
-        "sha256": "edc78ba8d63e88a0409194fa869c72c091e2806cb5cba0d40d15b8d5136b225d",
-        "size": 487
+        "sha256": "badb2b418c207c51a556f736209ed33982952e553c7d8c89b47995d63c481dce",
+        "size": 3528
+      },
+      {
+        "path": "tests/public/test_double_integrator.py",
+        "sha256": "e688a323f0ea500729276996c18df6e8736e21710306897ca7613cb05482cddb",
+        "size": 857
+      },
+      {
+        "path": "tests/public/test_dynamic_unicycle2d.py",
+        "sha256": "6e5532b60d7e5bedc36973002bff2084927b1e00a48fa4b60f7c54e7eedfcda5",
+        "size": 361
+      },
+      {
+        "path": "tests/public/test_kinematic_bicycle2D.py",
+        "sha256": "ddee3c2425755e48468efbefaa657dc8094feece40f6dd7b768b0938d77ae11b",
+        "size": 369
+      },
+      {
+        "path": "tests/public/test_linear_dynamics.py",
+        "sha256": "31c7b25ec53d81e4d4e46d8726dcc583ae4b2794b145f856453797947b0a771d",
+        "size": 411
+      },
+      {
+        "path": "tests/public/test_planar_quadrotor.py",
+        "sha256": "115b0e14c4f3a570e9cd80e43febd4a89ff62a2daf6419c72f9d80425bffe6ad",
+        "size": 781
+      },
+      {
+        "path": "tests/public/test_single_integrator.py",
+        "sha256": "38b09bb22d5f056de708c783b04b184ce95ab9acd47954272499f1ce9b1e8896",
+        "size": 429
       },
       {
         "path": "tests/public/test_unicycle.py",
-        "sha256": "4c08091d1a3568540de6a5914a148c6bfb1528f8d611de601a7eb872fcbc412a",
-        "size": 147
+        "sha256": "a4656c1b9ce6b650fd04d269dc8810e1e0bf9012f803ac8a00ff25a0ef5eeb11",
+        "size": 319
       },
       {
         "path": "tests/smoke/test_import.py",
-        "sha256": "322c76b023e9b85d6ab851b441d8ecb31fb39213a92c18e5fc91584ed8d1717c",
-        "size": 113
+        "sha256": "896d31ccb690cef6592e649bf16a742e033b5d5067cbf9592ee42a14f1ffce22",
+        "size": 101
       },
       {
         "path": "uv.lock",
-        "sha256": "0418a022139f28e69a68e374200d84a4e37a450da507fa85000bce63f08bfedc",
-        "size": 4676
+        "sha256": "8696deeb2e4569a566e399265b3bd07e8ca408c6999179b07f50ac38692fa896",
+        "size": 41931
       }
     ]
   },

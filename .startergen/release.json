@@ -1,12 +1,12 @@
 {
-  "artifact_id": "c0d2c06528759815b686357f1dcac52788ce758511a9c5b8238765a19af478d4",
+  "artifact_id": "25ae71dea01e2667b810e3bc78de512fd3cace09ff1f373a3ddf76517087e4f7",
   "branch": "main",
-  "documentation_id": "84fe53e143e4d86b70f47aa49fcccdbb39efd256f4ddf834bc5d6fcbf09cf277",
-  "documentation_url": "https://marshallvielmetti.github.io/dasc_lab_starter_project/releases/v0.1.1/",
+  "documentation_id": "a6d6271e4230f8fdf3505a2e5e6fcaf602627c3383160a21f2a4330f061440c9",
+  "documentation_url": "https://marshallvielmetti.github.io/dasc_lab_starter_project/releases/v0.1.4/",
   "generator_version": "0.1.0",
-  "release_id": "v0.1.1",
+  "release_id": "v0.1.4",
   "schema_version": 1,
-  "source_commit": "a84e14d7408b265739d7830c30640d92acd52388",
+  "source_commit": "2e62389b46dbfe66a601f57887caf3130108c36b",
   "stage": "starter",
   "starter_repository": "MarshallVielmetti/dasc_lab_starter_project"
 }
