@@ -1,0 +1,869 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Student guide and exercises for the DASC lab starter project">
+      
+      
+      
+        <link rel="canonical" href="https://marshallvielmetti.github.io/dasc_lab_starter_project/releases/v0.1.4/dynamics-models/">
+      
+      
+        <link rel="prev" href="../getting-started/">
+      
+      
+        <link rel="next" href="../background/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Dynamics Models - DASC Lab Starter Project</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dynamics-models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DASC Lab Starter Project" class="md-header__button md-logo" aria-label="DASC Lab Starter Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DASC Lab Starter Project
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dynamics Models
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MarshallVielmetti/dasc_lab_starter_project
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DASC Lab Starter Project" class="md-nav__button md-logo" aria-label="DASC Lab Starter Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DASC Lab Starter Project
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MarshallVielmetti/dasc_lab_starter_project
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamics Models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamics Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-of-dynamical-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics of Dynamical Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-general-linear-system-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: General Linear System Dynamics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-single-integrator-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Single-Integrator System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-double-integrator-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Double-Integrator System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2d-unicycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: 2D Unicycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2d-planar-quadrotor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: 2D Planar Quadrotor
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Background
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics-of-dynamical-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basics of Dynamical Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-general-linear-system-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: General Linear System Dynamics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-single-integrator-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Single-Integrator System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-double-integrator-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Double-Integrator System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2d-unicycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: 2D Unicycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2d-planar-quadrotor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: 2D Planar Quadrotor
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="dynamics-models">Dynamics Models<a class="headerlink" href="#dynamics-models" title="Permanent link">&para;</a></h1>
+<p>We use the language of dynamical systems to understand and analyze how robots evolve in the environment.</p>
+<h2 id="basics-of-dynamical-systems">Basics of Dynamical Systems<a class="headerlink" href="#basics-of-dynamical-systems" title="Permanent link">&para;</a></h2>
+<p>We define for a robot a state vector <span class="arithmatex">\(\mathbf{x}\)</span>, which exists inside of some <span class="arithmatex">\(n\)</span>-dimensional statespace <span class="arithmatex">\(\mathcal{X}\)</span>, which we typically consider to be a subset of the real numbers <span class="arithmatex">\(\mathbf{R}^n\)</span>.
+This state vector include define things like the position of the robot, its velocity, or more abstract things like the state of an estimator or battery charge.</p>
+<p>We consider this state to be evolving by some function <span class="arithmatex">\(f : \mathcal{X} \to \mathcal{X}\)</span>, that controls how the state changes from one moment in time to the next. We consider both a continuous time formulation, where the system evolves by the ordinary differential equation (ODE),
+$$
+    \dot{\mathbf{x}} = f(\mathbf{x}),
+$$
+or a simpler discrete-time formulation,
+$$
+    \mathbf{x}_{t+1} = \mathbf{x} + f(\mathbf{x}_t).
+$$</p>
+<p>You will often see control diagrams like this</p>
+<p><img alt="State-Only Control Diagram" src="../assets/dynamics_models/state_only.png" /></p>
+<p>showing how the state evolves through different functions.</p>
+<p>But in robotics, we are interested in controlling the system we are describing!
+So we usually want to consider a system with some control input vector <span class="arithmatex">\(\mathbf{u} \in \mathcal{U}\)</span>, again usually a subset of <span class="arithmatex">\(\mathbf{R}^m\)</span>.
+We then consider the state to be evolving by a function <span class="arithmatex">\(f : \mathcal{X} \times \mathcal{U} \to \mathcal{X}\)</span>, such that the control input changes the evolution of the state.
+In continuous time, we write
+$$
+    \dot{\mathbf{x}} = f(\mathbf{x}, \mathbf{u}),
+$$
+and in discrete-time,
+$$
+    \mathbf{x}_{t+1} = \mathbf{x} + f(\mathbf{x}_t, \mathbf{u}_t).
+$$</p>
+<p>This results in the following control diagram,
+<img alt="State-Control Diagram" src="../assets/dynamics_models/state_control.png" /></p>
+<p>In general, the form of <span class="arithmatex">\(f\)</span> is very important on what control techniques we can apply to the system. For example, if <span class="arithmatex">\(f\)</span> is linear, then we can write
+$$\label{eq:linear_system}
+    \dot{\mathbf{x}} = A\mathbf{x} + B \mathbf{u},
+$$
+where <span class="arithmatex">\(A \in \mathbb{R}^{n \times n}\)</span> determines the evolution of the 'uncotrollable portion' of the state, and <span class="arithmatex">\(B \in \mathbb{R}^{n \times m}\)</span> determines how the control input effects the state.
+The control and study of linear systems is a field in its own right.
+We work primarily with nonlinear systems in this lab, but many of the results underpinning nonlinear systems theory can be traced back to results from linear systems, so understanding their behavior and the theory behind their control is important!</p>
+<h2 id="exercise-general-linear-system-dynamics">Exercise: General Linear System Dynamics<a class="headerlink" href="#exercise-general-linear-system-dynamics" title="Permanent link">&para;</a></h2>
+<p>Following the continuous time linear dynamics in <span class="arithmatex">\(\eqref{eq:linear_system}\)</span>, implement the function <code>f</code> for a general linear system.</p>
+<p><a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project/blob/v0.1.4/src/dasc_lab/dynamics/linear.py#L14-L16">General linear dynamics — LinearDynamics.f (src/dasc_lab/dynamics/linear.py:14-16)</a></p>
+<h2 id="exercise-single-integrator-system">Exercise: Single-Integrator System<a class="headerlink" href="#exercise-single-integrator-system" title="Permanent link">&para;</a></h2>
+<p>We can now implement two common realizations of a linear system in our robotics environments. First, consider a single-integrator. Let <span class="arithmatex">\(\mathbf{x} \in \mathbb{R}^n\)</span> be the state, and <span class="arithmatex">\(\mathbf{u} \in \mathbb{R}\)</span> the control input. Then single-integrator dynamics are given by,
+$$\label{eq:single_integrator}
+    \dot{\mathbf{x}} = \mathbf{u}.
+$$</p>
+<p>This is analogous to the notion of 'velocity control'. This is one of the simples classes of systems we can consider; it has effectively unlimited control over its state, as it can stop or change direction instantaneously, and thus follow arbitrary continuous trajectories.</p>
+<p>We see that the relationship between <span class="arithmatex">\(\dot{\mathbf{x}}\)</span> and <span class="arithmatex">\(\mathbf{x}, \; \mathbf{u}\)</span> is linear, thus we can write a single integrator as a linear system. Consider e.g. a 2D system. Then,
+$$
+   \begin{bmatrix}
+        \dot{x}_1\\
+        \dot{x}_2
+   \end{bmatrix} =
+   \begin{bmatrix}
+        1 &amp; 0\\
+        0 &amp; 1
+   \end{bmatrix}
+   \begin{bmatrix}
+        u_1\\
+        u_2
+   \end{bmatrix}
+$$</p>
+<p>Complete the <code>__init__()</code> function for a single-integrator, which inherits <span class="arithmatex">\(f\)</span> from the <code>LinearSystem</code> class you just created. Create the instance of the super by calling <code>super().__init__(A, B)</code>.</p>
+<p><a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project/blob/v0.1.4/src/dasc_lab/dynamics/single_integrator.py#L9-L11">Single integrator dynamics — SingleIntegrator.<strong>init</strong> (src/dasc_lab/dynamics/single_integrator.py:9-11)</a></p>
+<h2 id="exercise-double-integrator-system">Exercise: Double-Integrator System<a class="headerlink" href="#exercise-double-integrator-system" title="Permanent link">&para;</a></h2>
+<p>A single-integrator system treats velocity as the control input:
+$$
+    \dot{\mathbf{x}}=\mathbf{u}.
+$$
+A double-integrator system instead treats acceleration as the control input. Let <span class="arithmatex">\(\mathbf{x}\in\mathbb{R}^n\)</span> denote position and let <span class="arithmatex">\(\mathbf{u}\in\mathbb{R}^n\)</span> denote the commanded acceleration. The dynamics are
+$$
+    \ddot{\mathbf{x}}=\mathbf{u}.
+$$
+To express these second-order dynamics as a first-order system, define the augmented state
+$$
+    \mathbf{z} =
+    \begin{bmatrix}
+        \mathbf{x}\\
+        \dot{\mathbf{x}}
+    \end{bmatrix} \in\mathbb{R}^{2n}.
+$$
+Its derivative is
+$$
+    \dot{\mathbf{z}} =
+    \begin{bmatrix}
+        \dot{\mathbf{x}}\\
+        \ddot{\mathbf{x}}
+    \end{bmatrix} =
+    \begin{bmatrix}
+        \dot{\mathbf{x}}\\
+        \mathbf{u}
+    \end{bmatrix}.
+$$
+Therefore, the double integrator can be written as the linear system
+$$
+    \dot{\mathbf{z}}=A\mathbf{z}+B\mathbf{u},
+$$
+where
+$$
+    A = \begin{bmatrix}
+        \mathbf{0} &amp; \mathbf{I}\\
+        \mathbf{0} &amp; \mathbf{0}
+    \end{bmatrix} \in\mathbb{R}^{2n\times 2n},
+    \qquad
+    B = \begin{bmatrix}
+        \mathbf{0}\\
+        \mathbf{I}
+    \end{bmatrix} \in\mathbb{R}^{2n\times n}.
+$$
+Here, <span class="arithmatex">\(\mathbf{I}\in\mathbb{R}^{n\times n}\)</span> is the identity matrix and <span class="arithmatex">\(\mathbf{0}\in\mathbb{R}^{n\times n}\)</span> is the zero matrix.
+The name “double integrator” reflects the fact that the input must be integrated once to obtain velocity and twice to obtain position.</p>
+<p><a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project/blob/v0.1.4/src/dasc_lab/dynamics/double_integrator.py#L9-L11">Double integrator dynamics — DoubleIntegrator.<strong>init</strong> (src/dasc_lab/dynamics/double_integrator.py:9-11)</a></p>
+<p>This process of defining an augmented state vector to reduce the complexity of a system is also very common and useful technique.</p>
+<h2 id="exercise-2d-unicycle">Exercise: 2D Unicycle<a class="headerlink" href="#exercise-2d-unicycle" title="Permanent link">&para;</a></h2>
+<p>The 2D unicycle is our first example of a non-linear system. Its state is given by <span class="arithmatex">\(\begin{bmatrix}x &amp; y &amp; \theta\end{bmatrix}^\top \in \mathbb{R}^3\)</span>, and control given by <span class="arithmatex">\(\begin{bmatrix}v &amp; \omega\end{bmatrix}^\top \in \mathbb{R}^2\)</span>, where <span class="arithmatex">\((x,y)\)</span> is the position of the vehicle in the 2D plane, <span class="arithmatex">\(\theta\)</span> is the heading angle, <span class="arithmatex">\(v\)</span> is the velocity, and <span class="arithmatex">\(\omega\)</span> is the angular velocity.</p>
+<p>The key difference between this model and the previous ones is the heading-angle: this robot can't just 'move sideways' directly by inputting a velocity command. It must change its heading through the <span class="arithmatex">\(\omega\)</span> input.</p>
+<p>The system dynamics are given by:
+$$
+    \begin{bmatrix}
+        \dot{x}\\
+        \dot{y}\\
+        \dot{\theta}
+    \end{bmatrix} =
+    \begin{bmatrix}
+        v \cdot \cos \theta\\
+        v \cdot \sin \theta\\
+        \omega
+    \end{bmatrix}.
+$$</p>
+<p>Because of the <span class="arithmatex">\(\sin\)</span> and <span class="arithmatex">\(\cos\)</span> functions, this system is <strong>non-linear</strong>: we can not write this as a linear system!
+Implement the 2D unicycle dynamics:</p>
+<p><a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project/blob/v0.1.4/src/dasc_lab/dynamics/unicycle_2d.py#L9-L14">Unicycle forward dynamics — Unicycle2D.f (src/dasc_lab/dynamics/unicycle_2d.py:9-14)</a></p>
+<p>If we introduce an integrator on the velocity term, we get what is known as the dynamic unicycle model. Its state is given by
+<span class="arithmatex">\(\begin{bmatrix}x &amp; y &amp; \theta &amp; v\end{bmatrix}^\top \in \mathbb{R}^3\)</span>, and control given by <span class="arithmatex">\(\begin{bmatrix}a &amp; \omega\end{bmatrix}^\top \in \mathbb{R}^2\)</span> where <span class="arithmatex">\(\theta\)</span> is heading angle, <span class="arithmatex">\(v\)</span> is velocity, <span class="arithmatex">\(a\)</span> is acceleration, and <span class="arithmatex">\(\omega\)</span> is angular velocity. Its dynamics are given by,
+$$
+    \begin{bmatrix}
+        \dot{x}\\
+        \dot{y}\\
+        \dot{\theta}\\
+        \dot{v}
+    \end{bmatrix} =
+    \begin{bmatrix}
+        v \cdot \cos \theta\\
+        v \cdot \sin \theta\\
+        \omega\\
+        a
+    \end{bmatrix}.
+$$</p>
+<p>The kinematic unicycle is often used as an approximation in planning for more complicated systems, from differential-drive ground robots to humanoids.</p>
+<h2 id="exercise-2d-planar-quadrotor">Exercise: 2D Planar Quadrotor<a class="headerlink" href="#exercise-2d-planar-quadrotor" title="Permanent link">&para;</a></h2>
+<p>We now introduce a simplified 2D quadrotor model known as the planar quadrotor.</p>
+<p>Its state is given by <span class="arithmatex">\(\begin{bmatrix}x  &amp; z &amp; \theta &amp; \dot{x} &amp; \dot{z} &amp; \dot{\theta}\end{bmatrix}^\top\)</span> and control is given by <span class="arithmatex">\(\begin{bmatrix}F_a &amp; F_b\end{bmatrix}^\top\)</span>, as shown in the diagram.</p>
+<p><img alt="Planar Quadrotor" src="../assets/dynamics_models/planar_quadrotor.webp" /></p>
+<p><span class="arithmatex">\(L\)</span> is the distance from the center of mass to the rotors, <span class="arithmatex">\(M\)</span> is the mass of the quadrotor, and <span class="arithmatex">\(g\)</span> is acceleration due to gravity. It also has moment of inertia <span class="arithmatex">\(I\)</span> about its center of mass, around the out-of-plane pitch/rotation axis.</p>
+<p>Its system dynamics are given by
+$$
+\begin{bmatrix}
+  \dot{x}\\
+  \dot{z}\\
+  \dot{\theta}\\
+  \ddot{x}\\
+  \ddot{z}\\
+  \ddot{\theta}
+\end{bmatrix} =
+\begin{bmatrix}
+    \dot{x}\\
+    \dot{z}\\
+    \dot{\theta}\\
+    -\frac{1}{M} \sin(\theta) (F_a + F_b)\\
+    -g + \frac{1}{M} \cos(\theta) (F_a + F_b)\\
+    \frac{L}{I} (F_b - F_a)
+\end{bmatrix}
+$$</p>
+<p>Now implement the dynamics!</p>
+<p><a href="https://github.com/MarshallVielmetti/dasc_lab_starter_project/blob/v0.1.4/src/dasc_lab/dynamics/planar_quadrotor.py#L16-L21">Planar quadrotor dynamics — PlanarQuadrotor.f (src/dasc_lab/dynamics/planar_quadrotor.py:16-21)</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting started">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Getting started
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../background/" class="md-footer__link md-footer__link--next" aria-label="Next: Background">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Background
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../_startergen/mathjax-config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
