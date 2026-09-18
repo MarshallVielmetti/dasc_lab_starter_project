@@ -1,5 +1,7 @@
 # DASC Lab Starter Project
 
+See the [Project Instructions](https://marshallvielmetti.github.io/dasc_lab_starter_project/latest/) to get started!
+
 Welcome to the DASC lab starter project.
 
 This series of small projects is intended to act as a primer to the concepts we use all the time in the lab!
